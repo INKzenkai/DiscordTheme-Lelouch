@@ -1,0 +1,80 @@
+/**
+ * @name Lelouch - ClearVision V7 for Vencord (Modificado por INKz)
+ * @author ClearVision Team + INKz
+ * @version 7.0.1-modify
+ * @description Tema com tons de Vermelhos e fundo personalizado.
+ */
+
+/* IMPORT CSS BASE */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+
+/* IMPORT FONTE */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+/* VARIÁVEIS PERSONALIZADAS */
+:root {
+  /* CORES PRINCIPAIS */
+  --main-color: #ff0000; /* Cor principal */
+  --hover-color: #b30000; /* Cor no hover */
+  --success-color: #43b581;
+  --danger-color: #ff1717;
+
+  /* CORES DE STATUS */
+  --online-color: #0bf089;
+  --idle-color: #ffffff;
+  --dnd-color: #fc811d;
+  --streaming-color: #500066;
+  --offline-color: #000000;
+
+  /* IMAGEM DE FUNDO */
+  --background-image: url("https://i.pinimg.com/1200x/4d/e2/ea/4de2eae8d79a91844b5b54184b1fd9d1.jpg");
+  --background-position: center;
+  --background-size: cover;
+  --background-attachment: fixed;
+  --background-filter: brightness(0.5) saturate(2);
+
+  /* TRANSPARÊNCIA */
+  --background-shading-percent: 15%;
+  --theme-transparency: #00000063;
+
+  /* IMAGENS DE USER MODAL/POPOUT */
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-filter: var(--background-filter);
+
+  /* ÍCONE HOME */
+  --home-icon: url("https://i.pinimg.com/736x/c7/9d/66/c79d662fbd0616be4d8cca6f7295b7b9.jpg");
+  --home-size: cover;
+
+  /* FONTE PRINCIPAL */
+  --main-font: "Lexend Deca", serif;
+  --code-font: Consolas, "Merriweather", monospace;
+
+  /* CANAIS */
+  --channel-normal: var(--main-color);
+  --channel-muted: #888;
+  --channel-hover: #000000;
+  --channel-selected: #ffffff;
+  --channel-selected-bg: var(--main-color);
+  --channel-unread: var(--main-color);
+  --channel-unread-hover: var(--hover-color);
+
+  /* ACESSIBILIDADE */
+  --focus-color: var(--main-color);
+}
+
+/* TEXTO GERAL */
+body, .app, .theme-dark, .theme-light {
+  font-family: var(--main-font) !important;
+}
